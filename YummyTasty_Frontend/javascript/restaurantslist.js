@@ -3,7 +3,7 @@ const resturantsList = document.getElementById("resturantsList")
 
 document.getElementById("username").textContent = localStorage.getItem("username").toUpperCase()  
 
-const retrieveRestos = fetch("http://localhost/YummyTasty/YummyTasty_Backend_laravel/public/api/list_restaurants", {method: "GET"});
+const retrieveRestos = fetch("http://localhost/YummyTasty_Full_stack/YummyTasty_Backend_laravel/public/api/list_restaurants", {method: "GET"});
 
 reqProcesses = retrieveRestos.then(res =>
   res.json()
