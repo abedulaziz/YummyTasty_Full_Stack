@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- normalize.css file -->
+  <link rel="stylesheet" href="./../styles/normalize.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- signin-signup CSS file -->
+  <link rel="stylesheet" href="./../styles/signin_signup.css">
+  <title>YummyTasty - Sign Up</title>
+  <link rel="icon" type="image/x-icon" href="./../assets/fav_icon/tab_favorite_icon.png">
+  <!-- axios script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="sign-up account_issues">
+    <div class="container">
+      <div class="content">
+        <form id="signupform" onsubmit="return false;">
+          <div class="sign-up_head account-header">
+            <h1>Sign Up</h1>
+            <p>Let's create your account.</p>
+          </div>
+
+          <div class="first_name">
+  
+            <label for="fname">First Name <span class="required">*</span></label><br>
+            <input type="text" name="fname" id="fname" placeholder="Your first name" required>
+  
+          </div>
+  
+          <div class="last_name">
+            <label for="lname">Last Name <span class="required">*</span></label><br>
+            <input type="text" name="lname" id="lname" placeholder="Your last name" required>
+          </div>
+  
+          <div class="user_email">
+            <label for="email">Email <span class="required">*</span></label><br>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+
+          <div class="user_pass">
+            <label for="password">Password <span class="required">*</span></label>
+            <input type="password" name="password" id="password" placeholder="Create your password" required>
+          </div>
+
+          <div class="user_gender">
+            <label for="gender">Gender <span class="required">*</span></label>
+            <select name="gender" id="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="phone-num">
+            <label for="phoneNum">Phone Number (Optional)</label>
+            <input type="tel" name="phoneNum" id="phoneNum" placeholder="Your phone number">
+          </div>
+
+          <div class="sign-up_butt">
+            <input type="submit" value="Sign Up" id="signup">
+          </div>
+        </form>
+
+        <div class="has-account">
+          <p>Already have an account? <a href="./../index.html">Sign In</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../javascript/signup.js"></script>
+</body>
+</html>

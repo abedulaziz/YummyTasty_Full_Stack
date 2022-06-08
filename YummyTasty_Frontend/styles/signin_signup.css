@@ -1,0 +1,112 @@
+:root {
+  --theme-color: #2b0505f0;
+  --theme-color-two: #141317;
+  --text-second-color: rgb(70, 70, 70);
+}
+
+.container {
+  padding: 0 7vw;
+}
+
+
+body {
+  height: 100vh;
+  color: #000;
+  background-image: url("./../assets/images/intro-1648989711.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--theme-color);
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.568);
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.required {
+  color: red;
+}
+
+
+/* sign-in and sign-up pages */
+
+
+.account_issues {
+  width: 100%;
+  height: 100%;
+}
+
+.account_issues .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.account_issues .content {
+  width: 400px;
+  height: auto;
+  background-color: #FFF;
+  padding: 20px;
+  margin:auto;
+  box-shadow: 0 0 20px #000;
+  border-top: 7px solid rgb(69, 22, 22);
+}
+
+.account_issues .content form .account-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.account_issues .content form .account-header h1 {
+  margin-bottom: 5px;
+}
+
+.account_issues .content form > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.account_issues .content form > div label {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+
+.account_issues .content form > div input:not([type="submit"]) {
+  width: 100%;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 4px;
+  background-color: var(--theme-color);
+  color: #FFF;
+  padding: 10px;
+}
+
+.account_issues .content form > div input:not([type="submit"]):focus {
+  outline: 2px solid rgb(78, 78, 78);
+}
+
+.account_issues .content form .user_gender select {
+  display: block;
+  width: 100%;
+  background-color: var(--theme-color);
+  color: #FFF;
+  padding: 10px;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 2px;
+}
+
+.account_issues .content form .sign-up_butt input, .account_issues .content form .sign-in_butt input{
+  background-color: var(--theme-color-two);
+  display: block;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 20px;
+  color: #FFF;
+  cursor: pointer;
+  margin: auto;
+}
+
+.account_issues .content .has-account {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+

@@ -1,0 +1,134 @@
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+a {
+  color: #FFF;
+}
+
+.container {
+  padding: 0 7vw;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(90, 122, 122);
+  color: #FFF;
+}
+
+header .content ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+
+header .content ul li {
+  /* display: inline-block; */
+  padding: 20px;
+  width: 25%;
+}
+
+header .content ul li.active {
+ border-bottom: 3px solid rgb(151, 255, 203); 
+}
+
+caption {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+table {
+  margin: 30px 0;
+  border-spacing: 0;
+}
+
+tr:not(:first-child):nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table tr.table-headers th{
+  border-bottom: 1px solid gray;
+  height: 50px;
+}
+table#manageRes tr.table-headers th:last-child{
+  border-bottom: none
+}
+
+
+
+th, td {
+  padding: 10px;
+}
+
+#delete button{
+  background-color: gray;
+  padding: 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* users */
+table#users {
+  margin: 30px auto;
+}
+
+#users tr.table-headers th{
+  border-bottom: 1px solid gray;
+  height: 50px;
+}
+
+/* upload resturants */
+
+.upload_resturant .container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload_resturant .content {
+  display: inline-block;
+}
+
+.upload_resturant .content form h2 {
+  text-align: center;
+}
+
+.upload_resturant .content form > div {
+  margin-bottom: 20px;
+}
+
+.upload_resturant .content form > div input {
+  width: 300px;
+  padding: 10px;
+}
+
+.upload_resturant .content form > div textarea {
+  width: 300px;
+  height: 70px;
+  padding: 10px;
+  resize: none;
+}
+
+.upload_resturant .content form > div label{
+  display: block
+
+}
+
+/* manage reviews */
+
+#reviews {
+  display: inline-block;
+}
+
+#reviews #status > div i{
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.green {
+  color :green;
+}
+
+.red {
+  color: rgb(186, 0, 0);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- normalize CSS file -->
+  <link rel="stylesheet" href="./../styles/normalize.css">
+  <!-- admin page styles -->
+  <link rel="stylesheet" href="./../styles/admin_pages_styles.css">
+  <!-- axios script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Manage Users</title>
+  <link rel="icon" type="image/x-icon" href="./../assets/fav_icon/tab_favorite_icon.png">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="content">
+        <ul>
+          <li class="active"><a href="./manage_users.html">Manage Users</a></li>
+          <li><a href="./reviews_status.html">Reviews Status</a></li>
+          <li><a href="./upload_resturants.html">Upload Resturants</a></li>
+          <li><a href="./manage_resturants.html">Manage Resturants</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <table id="users">
+      <caption>Users</caption>
+  
+      <tr class="table-headers">
+        <th>Full Name</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+  
+    </table>
+  </div>
+
+<script src="../javascript/list-users-registered.js"></script>
+</body>
+</html>

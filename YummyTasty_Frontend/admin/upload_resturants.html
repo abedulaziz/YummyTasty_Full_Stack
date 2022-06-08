@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- normalize CSS file -->
+  <link rel="stylesheet" href="./../styles/normalize.css">
+  <!-- admin page styles -->
+  <link rel="stylesheet" href="./../styles/admin_pages_styles.css">
+  <title>Upload Resturant</title>
+  <link rel="icon" type="image/x-icon" href="./../assets/fav_icon/tab_favorite_icon.png">
+  <!-- axios script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<header>
+  <div class="container">
+    <div class="content">
+      <ul>
+        <li><a href="./manage_users.html">Manage Users</a></li>
+        <li><a href="./reviews_status.html">Reviews Status</a></li>
+        <li class="active"><a href="./upload_resturants.html">Upload Resturants</a></li>
+        <li><a href="./manage_resturants.html">Manage Resturants</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+<body>
+  <div class="upload_resturant">
+    <div class="container">
+      <div class="content">
+        <form onsubmit="return false;">
+          <h2>Upload a new resturant</h2>
+          <h3 id="status" style="color:rgb(90, 122, 122);;text-align:center;display:none;"></h3>
+  
+          <div class="name">
+            <label for="resName">Name:</label>
+            <input type="text" name="resturant name" id="resName" placeholder="Resturant Name" required>
+          </div>
+          <div class="description">
+            <label for="resDesc">Description:</label>
+            <textarea name="resturant description" id="resDesc" placeholder="Resturant Description" required></textarea>
+          </div>
+          <div class="address">
+            <label for="resAddress">Address:</label>
+            <input type="text" name="resturant address" id="resAddress" placeholder="Resturant Address" required>
+          </div>
+          <div class="profile_pic">
+            <label for="profilePic">Upload a Profile Picture:</label>
+            <input type="file" name="profile picture" id="profilePic" required>
+          </div>
+          <div class="sign-up_butt">
+            <input type="submit" value="upload restaurant" id="upload-restaurant">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<script src="../javascript/upload-restaurant.js"></script>
+
+</body>
+</html>

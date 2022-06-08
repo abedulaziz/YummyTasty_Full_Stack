@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/764892ac1a.js" crossorigin="anonymous"></script>
+  <!-- normalize CSS file -->
+  <link rel="stylesheet" href="./../styles/normalize.css">
+  <!-- main CSS styles -->
+  <link rel="stylesheet" href="./../styles/main.css">
+  <!-- axios script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>YummyTasty - Resturant</title>
+  <link rel="icon" type="image/x-icon" href="./../assets/fav_icon/tab_favorite_icon.png">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="header_content">
+
+        <div class="logo-wrapper"><img src="./../assets/fav_icon/favorite_icon.png" alt="Yummy Tasty"></div>
+
+        <div class="profile-sec">
+          <span id="username">Name of user</span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <div class="res_details">
+    <div class="container">
+      <div class="content">
+        
+        <div class="res_profile_pic">
+          <img id="resturant_img" alt="">
+        </div>
+
+        <div class="details">
+          <h1 class="res_name" id="resName"></h1>
+            <p class="res_address" id="resAddress"></p>
+            <p class="res_desc" id="resDescription"></p>
+            <div id="res_rate"><span id="stars">3.5 </span><i class="fa-solid fa-star"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <div class="container">
+      <div class="content">
+
+        <div class="add-review">
+          <h1 class="username">Charley Grey</h1>
+          <button class="add_review_butt" id="addReview">Add a review</button>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="res_reviews">
+
+          <!-- <div class="current_user_review">
+            <h4 class="rev_head">Your Review:</h4>
+
+            <textarea name="description" id="description"></textarea>
+
+            <div class="rev_rate">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="rev_status">
+              <div class="cancel">Cancel</div>
+              <div class="submit">Submit</div>
+            </div>
+
+          </div> -->
+
+          <!-- <div class="review">
+            <h3 class="username">Ahmad Yassin</h3>
+            <div class="review_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p class="user_feedback">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita odit a itaque magni quod, perferendis nisi temporibus. Delectus ab, molestias tempora voluptas fugiat excepturi, architecto necessitatibus illo aperiam quod natus!</p>
+          </div> -->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copy-right">
+        Copyright &copy; 2022
+      </div>
+      <div class="social-media">
+        <div class="instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        <div class="github"><a href="https://github.com/abedulaziz/Yummy_Tasty"><i class="fa-brands fa-github"></i></a></div>
+      </div>
+    </div>
+  </footer>
+    
+  <script src="./../javascript/resDetails.js"></script>
+  
+</body> 
+</html>

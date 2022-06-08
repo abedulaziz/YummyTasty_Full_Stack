@@ -1,0 +1,511 @@
+
+:root {
+  --theme-color: #2b0505f0;
+  --theme-color-two: #141317;
+  --text-second-color: rgb(70, 70, 70);
+}
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #FFF;
+  color: #000;
+  min-height: 100vh;
+  padding-bottom: 58.4px;
+  position: relative;
+}
+
+.container {
+  padding: 0 7vw;
+}
+
+/* ---------------------------------------- */
+/* --------------- header ----------------- */
+/* ---------------------------------------- */
+
+header {
+  padding: 20px 0;
+  background-color: var(--theme-color-two);
+  color: #FFF;
+}
+
+header .header_content {
+  display: flex;
+  align-items: center;
+}
+
+header .header_content .logo-wrapper img {
+  width: 50px;
+}
+
+header .header_content .profile-sec {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header .header_content .profile-sec img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* ---------------------------------------- */
+/* --------------- footer ---------------- */
+/* ---------------------------------------- */
+
+footer {
+  background-color: var(--theme-color-two);
+  color: #FFF;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+footer .social-media a {
+  color: #FFF;
+}
+
+/* ---------------------------------------- */
+/* ---------- resturant details ----------- */
+/* ---------------------------------------- */
+
+h3, h4 {
+  margin: 0;
+}
+
+.reviewed {
+  background-color: #37131397 !important;
+  cursor:initial !important;
+}
+
+.res_details {
+  margin: 50px 0 40px;
+}
+
+.res_details .content{
+  display: flex;
+}
+
+.res_details .content > div {
+  width: 50%;
+}
+
+.res_details .content .res_profile_pic img {
+  object-fit: cover;
+  width: 85%;
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 10px ;
+  background-color: var(--theme-color);
+}
+
+.res_details .content .details {
+  padding: 20px;
+}
+
+.res_details .content .details .res_name {
+  margin-bottom: 0;
+}
+
+.res_details .content .details .res_address {
+  font-size: 20px;
+  margin: 5px 0 20px;
+  color: gray;
+}
+
+.res_details .content .details .res_desc {
+  line-height: 1.8;
+  color: var(--theme-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.res_details .content .details #res_rate {
+  padding: 7px 12px;
+  background-color: var(--theme-color-two);
+  display: inline-block;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+}
+
+.res_details .content .details #res_rate #stars{
+  font-size: 20px;
+}
+
+.res_details .content .details #res_rate i.fa-solid.fa-star {
+  font-size: 13px;
+}
+
+/* reviews */
+
+.reviews .content .add-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0;
+}
+
+.reviews .content .add-review .username  {
+  margin: 0;
+}
+
+.reviews .content .add-review .add_review_butt {
+  padding: 10px;
+  background-color: var(--theme-color);
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reviews .separator {
+  height: 1px;
+  background-color: gray;
+  margin: 20px 0;
+}
+
+.reviews .content .current_user_review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--theme-color);
+  margin-bottom: 20px;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reviews .content .current_user_review > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.reviews .content .current_user_review .rev_rate {
+  color: gold;
+}
+
+.reviews .content .current_user_review .rev_rate >i:not(:last-child) {
+  margin-right: 5px;
+}
+
+.reviews .content .current_user_review .rev_status {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.reviews .content .current_user_review .rev_status > div {
+  background-color: var(--theme-color-two);
+  padding:10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviews .content .current_user_review .rev_status .cancel {
+  background-color: #fff;
+  color: var(--theme-color-two);
+  border: 3px solid var(--theme-color-two);
+}
+
+.reviews .content .current_user_review  textarea {
+  width: 300px;
+  border: 2px solid gray;
+  resize: none;
+  height: 70px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.reviews .content .res_reviews .review {
+  margin-bottom: 30px;
+}
+
+.reviews .content .res_reviews .review .username {
+  margin-bottom: 0;
+}
+
+.reviews .content .res_reviews .review .review_rate {
+  margin: 5px 0;
+  color: rgb(255, 217, 0)
+}
+
+.reviews .content .res_reviews .review .user_feedback {
+  font-size: 18px;
+}
+
+/* resturant detials media queries */
+
+@media (max-width: 926px) {
+  .res_details .content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .res_details .content > div {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------- */
+/* ----------- resturants List ------------ */
+/* ---------------------------------------- */
+
+.resturants_list {
+  color: #FFF;
+}
+
+.resturants_list .res-head {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.resturants_list .res-head h2 {
+  font-size: 30px;
+  margin: 0 0 5px;
+  color: #000;
+}
+
+.resturants_list .res-head p {
+  color:var(--text-second-color)
+}
+
+.resturants_list .resturant {
+  display: flex;
+  height: 300px;
+  box-shadow: 0 0 20px #000;
+  margin-bottom: 30px;
+  background-color: var(--theme-color);
+  width: 85%;
+}
+
+.resturants_list .resturant:nth-child(odd) {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.resturants_list .resturant > div {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.resturants_list .resturant .res_profile_img .img-wrapper {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.resturants_list .resturant .res_profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 5px 5px 20px #000;
+}
+
+.resturants_list .resturant .res-about .res_name {
+  margin: 20px 0 10px;
+}
+
+.resturants_list .resturant .res-about .describtion {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.resturants_list .resturant .res-about .res_details{
+  margin-top: 10px;
+}
+
+.resturants_list .resturant .res-about .res_details a{
+  color:rgb(122, 122, 122);
+}
+
+
+/* media queries */
+@media (max-width: 1054px) {
+  .resturants_list .resturant {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .resturants_list .resturant {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .resturants_list .resturant > div {
+    width: 100%;
+  }
+}
+
+
+/* ---------------------------------------- */
+/* ------------ user profile -------------- */
+/* ---------------------------------------- */
+
+.user-profile .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile .overlay {
+  top:0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.457);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+.user-profile .content {
+  padding: 20px 0;
+}
+
+.user-profile .content .profile_img_wrapper img{
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: var(--theme-color);
+}
+
+.user-profile .content .username {
+  padding: 20px 0 5px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.user-profile .content .user-email {
+  color: var(--text-second-color)
+}
+
+.user-profile .content .change_info #editProfile {
+  background-color: var(--theme-color);
+  color: #FFF;
+  padding: 14px 14px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.separator {
+  height: 1.5px;
+  background-color: var(--text-second-color);
+  margin: 3px;
+}
+
+
+.user_info_details .content {
+  padding: 20px 0;
+}
+
+.user_info_details .content > div {
+  display: flex;
+  padding:10px 0;
+  justify-content: space-around;
+}
+
+.user_info_details .content > div .user-info{
+  color: var(--theme-color);
+}
+
+.user_info_details .content > div >div {
+  flex: 1
+}
+
+.user_info_details .content > div >div:first-child {
+  font-weight: 600;
+}
+
+#editInfo {
+  display: none;
+  background: var(--theme-color-two);
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+#editInfo .account-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#editInfo .account-header h1 {
+  margin-bottom: 5px;
+}
+
+#editInfo > div:not(:last-child)  {
+  margin-bottom: 15px;
+}
+#editInfo  > div label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#editInfo div input:not([type="submit"]) {
+  width: 100%;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 4px;
+  background-color: #FFF;
+  color: #000;
+  padding: 10px;
+}
+
+#editInfo >div input:not([type="submit"]):focus {
+  outline: 2px solid rgb(78, 78, 78);
+}
+
+#editInfo div input:not([type="submit"])::placeholder {
+  color: #000;
+}
+
+#editInfo .edit-info-butt {
+  display: flex;
+  justify-content: center;
+}
+
+#editInfo .edit-info-butt input {
+  background-color: var(--theme-color);
+  display: block;
+  border-radius: 3px;
+  padding: 15px 20px;
+  color: #FFF;
+  cursor: pointer;
+  /* margin: auto; */
+  border: 1px solid;
+}
+
+#editInfo .edit-info-butt input#cancelEdit {
+  background-color: #FFF;
+  border: 3px solid var(--theme-color);
+  color: var(--theme-color);
+  font-weight: bold;
+  margin-right: 10px;
+}

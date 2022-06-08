@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- normalize.css file -->
+  <link rel="stylesheet" href="./YummyTasty_Frontend/styles/normalize.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- signin_signup CSS file -->
+  <link rel="stylesheet" href="./YummyTasty_Frontend/styles/signin_signup.css">
+  <!-- axios script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>YummyTasty - Sign In</title>
+  <link rel="icon" type="image/x-icon" href="./YummyTasty_Frontend/assets/fav_icon/tab_favorite_icon.png">
+</head>
+<body>
+  <div class="sign-in account_issues">
+    <div class="container">
+      <div class="content">
+        <form id="signinform" onsubmit="return false;">
+          <div class="sign-in_head account-header">
+            <h1>Sign In</h1>
+            <p>Let's retrieve your account.</p>
+          </div>
+
+  
+          <div class="user_email">
+            <label for="email">Email <span class="required">*</span></label><br>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+
+          <div class="user_pass">
+            <label for="password">Password <span class="required">*</span></label>
+            <input type="password" name="password" id="password" placeholder="Your password" required>
+          </div>
+
+          <div class="sign-in_butt">
+            <input type="submit" value="Sign In" id="btn-login">
+          </div>
+        </form>
+
+        <div class="has-account">
+          <p>New to our application? <a href="./YummyTasty_Frontend/pages/sign-up.html">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./YummyTasty_Frontend/javascript/loginscript.js"></script>
+</body>
+</html>

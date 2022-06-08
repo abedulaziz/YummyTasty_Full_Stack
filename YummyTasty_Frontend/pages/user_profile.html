@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/764892ac1a.js" crossorigin="anonymous"></script>
+    <!-- normalize CSS file -->
+    <link rel="stylesheet" href="./../styles/normalize.css" />
+    <!-- main CSS styles -->
+    <link rel="stylesheet" href="./../styles/main.css">
+    <!-- axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>YummyTasty - my profile</title>
+    <link rel="icon" type="image/x-icon" href="./../assets/fav_icon/tab_favorite_icon.png" />
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="container">
+  
+        <div class="header_content">
+  
+          <div class="logo-wrapper"><img src="./../assets/fav_icon/favorite_icon.png" alt="Yummy Tasty"></div>
+  
+          <div class="profile-sec">
+            <span id="username"></span>
+          </div>
+  
+        </div>
+      </div>
+    </header>
+
+      <div class="user-profile">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="content">
+
+            <div class="profile_img_wrapper">
+              <img alt="profile image">
+            </div>
+
+            <div class="username" id="usernameHead">John Doe</div>
+            <div class="user-email" id="userEmail">John.Doe@gmail.com</div>
+            <div class="change_info"><button id="editProfile">Edit Profile</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="separator"></div>
+      </div>
+
+      <div class="user_info_details">
+        <div class="container">
+          <div class="content">
+
+            <div class="first_name">
+              <div>First Name:</div>
+              <div class="user_fname user-info">John</div>
+            </div>
+
+            <div class="Last_name">
+              <div>Last Name:</div>
+              <div class="user_lname user-info">Doe</div>
+            </div>
+
+            <div class="email">
+              <div>Email:</div>
+              <div class="user_email user-info">John.Doe@gmail.com</div>
+            </div>
+
+            <div class="gender">
+              <div>Gender:</div>
+              <div class="user_gender user-info">Male</div>
+            </div>
+
+            <div class="phone_number">
+              <div>Phone Number:</div>
+              <div class="user_gender user-info">+96123584</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- hidden form accepts data when the user clicks on edit profile button -->
+      <form id="editInfo" onsubmit="return false;">
+        <div class="sign-up_head account-header">
+          <h1>Edit your profile</h1>
+        </div>
+
+        <div class="first_name">
+
+          <label for="fname">First Name <span class="required">*</span></label><br>
+          <input type="text" name="first_name" id="fname" placeholder="Your first name" required>
+
+        </div>
+
+        <div class="last_name">
+          <label for="lname">Last Name <span class="required">*</span></label><br>
+          <input type="text" name="last_name" id="lname" placeholder="Your last name" required>
+        </div>
+
+        <div class="user_email">
+          <label for="email">Email <span class="required">*</span></label><br>
+          <input type="email" name="email" id="email" placeholder="Your email" required>
+        </div>
+
+        <div class="user_pass">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" name="password" id="password" placeholder="Create your password" required>
+        </div>
+
+        <div class="phone-num">
+          <label for="phoneNum">Phone Number (Optional)</label>
+          <input type="tel" name="phone_number" id="phoneNum" placeholder="Your phone number">
+        </div>
+
+        <div class="edit-info-butt">
+          <input type="submit" id="cancelEdit" value="Cancel">
+          <input type="submit" value="Submit" id="editInfoButt">
+        </div>
+      </form>
+
+    <footer>
+      <div class="container">
+        <div class="copy-right">
+          Copyright &copy; 2022
+        </div>
+        <div class="social-media">
+          <div class="instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+          <div class="facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="linkedin"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+          <div class="github"><a href="https://github.com/abedulaziz/Yummy_Tasty"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./../javascript/userProfile.js"></script>
+  </body>
+
+</html>
+
